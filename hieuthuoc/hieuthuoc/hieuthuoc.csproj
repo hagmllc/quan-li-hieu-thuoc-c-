@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD621478-0643-48F5-AB72-AB6E96150100}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>hieuthuoc</RootNamespace>
+    <AssemblyName>hieuthuoc</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baocaodoanhthu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baocaodoanhthu.Designer.cs">
+      <DependentUpon>baocaodoanhthu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baocaosoluongnhapxuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baocaosoluongnhapxuat.Designer.cs">
+      <DependentUpon>baocaosoluongnhapxuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chitiethoadonnhap.cs" />
+    <Compile Include="chitiethoadonxuat.cs" />
+    <Compile Include="dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dangnhap.Designer.cs">
+      <DependentUpon>dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danhsachhoadonnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhsachhoadonnhap.Designer.cs">
+      <DependentUpon>danhsachhoadonnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danhsachhoadonxuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhsachhoadonxuat.Designer.cs">
+      <DependentUpon>danhsachhoadonxuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danhsachthuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhsachthuoc.Designer.cs">
+      <DependentUpon>danhsachthuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="datatil.cs" />
+    <Compile Include="dshoadonhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dshoadonhap.Designer.cs">
+      <DependentUpon>dshoadonhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportToExcel.cs" />
+    <Compile Include="gioithieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gioithieu.Designer.cs">
+      <DependentUpon>gioithieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hieuthuocDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hieuthuocDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hoadonnhap.cs" />
+    <Compile Include="hoadonxuat.cs" />
+    <Compile Include="inhoadonxuatthuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inhoadonxuatthuoc.Designer.cs">
+      <DependentUpon>inhoadonxuatthuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="laphoadonnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laphoadonnhap.Designer.cs">
+      <DependentUpon>laphoadonnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="laphoadonxuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laphoadonxuat.Designer.cs">
+      <DependentUpon>laphoadonxuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_chinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_chinh.Designer.cs">
+      <DependentUpon>menu_chinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nhanvien.cs" />
+    <Compile Include="nhapthuocvaokho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nhapthuocvaokho.Designer.cs">
+      <DependentUpon>nhapthuocvaokho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nhomthuoc.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quanli_hieuthuocDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quanli_hieuthuocDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="quanli_hieuthuocDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quanli_hieuthuocDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="quanli_hieuthuocDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quanli_hieuthuocDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suanhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="suanhanvien.Designer.cs">
+      <DependentUpon>suanhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="themnhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="themnhanvien.Designer.cs">
+      <DependentUpon>themnhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thuoc.cs" />
+    <Compile Include="xemchitietnv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xemchitietnv.Designer.cs">
+      <DependentUpon>xemchitietnv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xoanhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xoanhanvien.Designer.cs">
+      <DependentUpon>xoanhanvien.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baocaodoanhthu.resx">
+      <DependentUpon>baocaodoanhthu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baocaosoluongnhapxuat.resx">
+      <DependentUpon>baocaosoluongnhapxuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dangnhap.resx">
+      <DependentUpon>dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danhsachhoadonnhap.resx">
+      <DependentUpon>danhsachhoadonnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danhsachhoadonxuat.resx">
+      <DependentUpon>danhsachhoadonxuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danhsachthuoc.resx">
+      <DependentUpon>danhsachthuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dshoadonhap.resx">
+      <DependentUpon>dshoadonhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gioithieu.resx">
+      <DependentUpon>gioithieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inhoadonxuatthuoc.resx">
+      <DependentUpon>inhoadonxuatthuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laphoadonnhap.resx">
+      <DependentUpon>laphoadonnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laphoadonxuat.resx">
+      <DependentUpon>laphoadonxuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_chinh.resx">
+      <DependentUpon>menu_chinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nhapthuocvaokho.resx">
+      <DependentUpon>nhapthuocvaokho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="suanhanvien.resx">
+      <DependentUpon>suanhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="themnhanvien.resx">
+      <DependentUpon>themnhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xemchitietnv.resx">
+      <DependentUpon>xemchitietnv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xoanhanvien.resx">
+      <DependentUpon>xoanhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="hieuthuocDataSet.xsc">
+      <DependentUpon>hieuthuocDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hieuthuocDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hieuthuocDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hieuthuocDataSet.xss">
+      <DependentUpon>hieuthuocDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="quanli_hieuthuocDataSet.xsc">
+      <DependentUpon>quanli_hieuthuocDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="quanli_hieuthuocDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>quanli_hieuthuocDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quanli_hieuthuocDataSet.xss">
+      <DependentUpon>quanli_hieuthuocDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="quanli_hieuthuocDataSet1.xsc">
+      <DependentUpon>quanli_hieuthuocDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="quanli_hieuthuocDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>quanli_hieuthuocDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quanli_hieuthuocDataSet1.xss">
+      <DependentUpon>quanli_hieuthuocDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="quanli_hieuthuocDataSet2.xsc">
+      <DependentUpon>quanli_hieuthuocDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="quanli_hieuthuocDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>quanli_hieuthuocDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quanli_hieuthuocDataSet2.xss">
+      <DependentUpon>quanli_hieuthuocDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
